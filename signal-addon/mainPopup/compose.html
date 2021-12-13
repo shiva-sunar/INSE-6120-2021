@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signal Add-On</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div id="warningBox" class="col-lg-6 text-center d-none">
+            <div  class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">Warning!</h4>
+                <p id="warningMessage"></p>
+            </div>
+        </div>
+        <div id="successfulBox" class="col-lg-6 text-center d-none">
+            <div  class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Successful!</h4>
+                <p id="successfulMessage"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 text-center d-none" id="linkForm">
+        <h1 class="h3 mb-3 fw-normal"><strong>Link to Signal</strong></h1>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="deviceName">
+            <label for="deviceName">Device Name (e.g., Ehsan)</label>
+        </div>
+
+        <br>
+        <div class="btn-group d-grid gap-1" role="group">
+            <button class="btn btn-primary btn-" type="button" id="linkButton">Link</button>
+        </div>
+    </div>
+    <div id="sendMessageForm" class="d-none">
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>From (Signal): </td>
+                <td><div id="senderVerifiedPhoneNumber"></div></td>
+            </tr>
+            <tr>
+                <td>To (Email): </td>
+                <td><div id="receiverEmailAddress"></div></td>
+            </tr>
+            <tr>
+                <td>Receiver Phone Number: </td>
+                <td>
+                    <div class="input-group">
+                        <select class="form-select form-control" id="contactList">
+                            <option>None</option>
+                        </select>
+                        <button class="form-control btn btn-primary btn-sm" id="updateContactList">Update</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Subject: </td>
+                <td><div id="emailSubject"></div></td>
+            </tr>
+            <tr>
+                <td><label for="emailBody">Body</label></td>
+                <td ><div id="emailBody"></div></td>
+            </tr>
+            <tr>
+                <td>Key: </td>
+                <td colspan="2">
+                    <input type="text" class="form-control" id="signalKey" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emailBodyCiphertext">Ciphertext</label></td>
+                <td><textarea class="form-control" id="emailBodyCiphertext" disabled></textarea></td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                   <div class="d-grid gap-2">
+                       <button class="btn btn-primary" type="button" id="sendEmail">Send</button>
+                       <button class="btn btn-danger" type="button" id="logout">Logout</button>
+                   </div>
+               </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/compose.js"></script>
+<script src="../js/aes.js"></script>
+<script src="../js/jquery.md5.js"></script>
+
+</body>
+</html>

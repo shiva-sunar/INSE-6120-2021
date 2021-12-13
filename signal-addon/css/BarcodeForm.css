@@ -1,0 +1,101 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+
+    background-repeat: no-repeat
+}
+
+input,
+
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+
+    outline-width: 0;
+    font-weight: 400
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+    position: relative
+}
+
+.card1 {
+    width: 80%
+}
+
+.card2 {
+    width: 100%;
+
+    background-color: #E8EAF6
+}
+
+#image {
+    width: 30%;
+    margin: auto
+}
+
+
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem
+}
+
+
+
+.btn-gray {
+    border-radius: 50px;
+    color: white;
+    background-color: #4169e1;
+    padding: 10px 40px;
+    font-size: 15px
+}
+
+.btn-gray:hover {
+    color: white;
+    background-color: #3f41ff
+}
+
+.bottom {
+    bottom: 0;
+    position: absolute;
+    width: 100%
+}
+
+@media screen and (max-width: 1200px) {
+    .card1 {
+        width: 100%;
+        padding: 10px 30px
+    }
+
+    .bottom {
+        position: relative
+    }
+
+    .card2 {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px !important
+    }
+
+    .card2 {
+        height: 400px
+    }
+}
