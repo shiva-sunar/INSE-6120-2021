@@ -5,7 +5,7 @@ Later receiver gets the password and decrypts the email using it.
 To automate the process SigMail thunderbird addon is created.<br/>
 Contributors:-
   * Ehsan Khodayarseresht
-  * Md. Nazmul Hoque
+  * Md. Nazmul Hoq
   * Sanju Bhantana
   * Shiva Sunar
   * Sofya Smolyakova
