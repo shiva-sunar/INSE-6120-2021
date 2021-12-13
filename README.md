@@ -4,8 +4,8 @@ It encrypts an email with a random password and sends the password to the receiv
 Later receiver gets the password and decrypts the email using it.
 To automate the process thunderbird addon...
 Contributor:-
-  Ehsan Khodayarseresht
-  Md. Nazmul Hoque
-  Sanju Bhantana
-  Shiva Sunar
-  Sofya Smolyakova
+  * Ehsan Khodayarseresht
+  * Md. Nazmul Hoque
+  * Sanju Bhantana
+  * Shiva Sunar
+  * Sofya Smolyakova
